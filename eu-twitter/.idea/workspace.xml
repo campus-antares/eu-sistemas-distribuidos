@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78ebcb17-73f4-468a-b963-d293b560a9f5" name="Changes" comment="">
+    <list default="true" id="78ebcb17-73f4-468a-b963-d293b560a9f5" name="Changes" comment="se agrega comentario">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/unresolved/preparation/Pregunta01.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/unresolved/preparation/Pregunta01.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/unresolved/preparation/Pregunta02.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/unresolved/preparation/Pregunta02.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,8 +68,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/rudy/Documents/EU/Computacion Ditribuida/eu-sistemas-distribuidos/eu-twitter&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.43333334&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -129,6 +127,28 @@
       <option name="presentableId" value="Default" />
       <updated>1677886464736</updated>
     </task>
+    <task id="LOCAL-00001" summary="ajuste pregunta 01">
+      <created>1677920713823</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677920713823</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ajuste pregunta 01">
+      <created>1677920726104</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677920726104</updated>
+    </task>
+    <task id="LOCAL-00003" summary="se agrega comentario">
+      <created>1677929852590</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677929852590</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,5 +161,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ajuste pregunta 01" />
+    <MESSAGE value="se agrega comentario" />
+    <option name="LAST_COMMIT_MESSAGE" value="se agrega comentario" />
   </component>
 </project>
