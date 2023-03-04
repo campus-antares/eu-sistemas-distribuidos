@@ -11,10 +11,10 @@ object Pregunta02 extends SparkUtils {
   def main(args: Array[String]): Unit = {
     //val path_twitter: String = getClass.getResource("C:\\Users\\LENNON\\Desktop\\Master en BIG DATA\\Sistemas Distribuidos\\eu-sistemas-distribuidos\\eu-twitter\\src\\main\\resources\\05.json").getPath
     val jsonReader = JSONReader()
-    val df_twitter: DataFrame = jsonReader.readDf("C:\\Users\\LENNON\\Desktop\\Master en BIG DATA\\Sistemas Distribuidos\\eu-sistemas-distribuidos\\eu-twitter\\src\\main\\resources\\05.json")
+    val df_twitter: DataFrame = jsonReader.readDf("/Users/rudy/Documents/05.json")
     import spark.implicits._
 
-    println("Trending topic en función de cuatro idiomas del perfil de usuario: ")
+    //println("Trending topic en función de cuatro idiomas del perfil de usuario: ")
     val entities_lang = df_twitter
       .select($"lang".as("user_lang"), explode(col("entities.hashtags.text")).alias("hashtag"))
       /*.groupBy("user_lang","hashtag")
@@ -41,7 +41,7 @@ object Pregunta02 extends SparkUtils {
       .orderBy(desc("count"))
     .show(4,false)
 
-    println("El usuario con mayor número de seguidores que participó ese día: ")
+    //println("El usuario con mayor número de seguidores que participó ese día: ")
     val follower = df_twitter
       .select($"user.id",$"user.followers_count")
       .orderBy(desc("user.followers_count"))
