@@ -12,6 +12,7 @@ object Pregunta02 extends SparkUtils {
     //val path_twitter: String = getClass.getResource("C:\\Users\\LENNON\\Desktop\\Master en BIG DATA\\Sistemas Distribuidos\\eu-sistemas-distribuidos\\eu-twitter\\src\\main\\resources\\05.json").getPath
     val jsonReader = JSONReader()
     val df_twitter: DataFrame = jsonReader.readDf("C:\\Users\\LENNON\\Desktop\\Master en BIG DATA\\Sistemas Distribuidos\\eu-sistemas-distribuidos\\eu-twitter\\src\\main\\resources\\05.json")
+
     import spark.implicits._
 
     println("Trending topic en función de cuatro idiomas del perfil de usuario: ")
