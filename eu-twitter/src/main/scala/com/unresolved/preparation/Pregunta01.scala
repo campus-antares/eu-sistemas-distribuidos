@@ -1,13 +1,9 @@
 package com.unresolved.preparation
 import org.apache.spark.sql.DataFrame
 import com.unresolved.SparkUtils
-import com.unresolved.reader.{AbstractReaderDf, AvroReader, CSVReader, JSONReader}
-import com.unresolved.utils.MySleep.uemSleep
+import com.unresolved.reader.{JSONReader}
 import org.apache.spark.sql.functions.{col, count, date_format, desc, explode, expr, locate, to_timestamp}
 
-import java.time.{Instant, ZoneId}
-import java.util.Locale
-import java.time.format.DateTimeFormatter
 object Pregunta01 extends SparkUtils {
   def main(args: Array[String]): Unit = {
   val jsonReader = JSONReader()
@@ -18,8 +14,8 @@ object Pregunta01 extends SparkUtils {
 
   import spark.implicits._
 
-    //println("Cantidad de datos procesados en función de cada intervalo temporal (hora y día): ")
-
+    println("Cantidad de datos procesados en función de cada intervalo temporal (hora y día): ")
+  //
   val b = drop_null_col
     .select($"id", $"created_at")
     .withColumn("day",date_format(to_timestamp($"created_at", "EEE MMM dd HH:mm:ss Z yyyy"),"dd"))
